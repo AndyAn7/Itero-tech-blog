@@ -1,5 +1,4 @@
 # Itero-tech-blog
-Itero is a tech blog where developers view, post, and comment on the latest trends and advancements in technology.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](https://opensource.org/licenses/MIT)
 
@@ -21,6 +20,7 @@ Itero is a tech blog where developers view, post, and comment on the latest tren
 
 ## [Description](#description)
 <a name="description"></a>
+Itero is a tech blog where developers view, post, and comment on the latest trends and advancements in technology.
 
 ## [Code](#code)
 <a name="code"></a>
