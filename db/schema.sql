@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS itero_db;
+CREATE DATABASE itero_db;
