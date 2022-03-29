@@ -13,7 +13,7 @@ router.get('/:id', async (req, res) => {
                 'id', 
                 'title', 
                 'content', 
-                'created_at'
+                'date_created',
             ],
             include: [
                 {

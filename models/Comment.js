@@ -5,17 +5,18 @@ class Comment extends Model {}
 
 Comment.init(
     {
-        id: {
+        post_id: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'post',
                 key: 'id'
             },
-        comment: {
+        post_comment: {
             type: DataTypes.TEXT,
-            allowNull: false
+            allowNull: false,
+            primaryKey: true
             },
-        created: {
+        date_created: {
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW,
             allowNull: false
