@@ -1,0 +1,12 @@
+[
+    {
+        "post_comment": "Radical!",
+        "post_id": 1,
+        "user_id": 2
+    },
+    {
+        "post_comment": "I agree!",
+        "post_id": 1,
+        "user_id": 3
+    }
+]
