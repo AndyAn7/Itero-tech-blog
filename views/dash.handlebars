@@ -1,0 +1,57 @@
+<div class="row">
+  <div>
+    <h2>Hi {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4 g-5">
+  <div class="col-12 col-md-6 col-lg-6 col-sm-12">
+    
+    <h6 style="background-color:#fafdf6; border-radius: 10px; color:#020202; padding: 15px 15px 15px 15px; margin-bottom:30px;">create:</h6>
+    
+    <form class="new-post-form">
+
+      <div class="form-group mb-3">
+        <label for="post-title" class="form-label"><h6>title:</h6></label>
+        <input class="form-input-single" type="text" id="post-title" name="post-title" />
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="post-content" class="form-label"><h6>content:</h6></label>
+        <textarea class="form-input" id="post-content" name="post-content" rows="5"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="theme-button">/submit</button>
+      </div>
+    </form>
+  </div>
+
+
+{{!-- DISPLAYS USER POSTS. --}}
+<div class="col-6 col-md-6 col-lg-6 col-sm-12 post">
+
+    <h6 style="background-color:#fafdf6; border-radius:10px; color:#020202; padding: 15px 15px 15px; margin-bottom:30px;">/previous</h6>
+   
+    <div class="sidebar">
+
+      {{#each posts as |post| }}
+        <div style="width:90%">
+          <h4>
+            <a href="/post/{{post.id}}">{{post.title}}</a>
+          </h4>
+
+          <p class="dashboard-post-list" style="padding-bottom:10px;">
+            {{post.content}}
+          </p>
+
+          <p><img class="post-icon" src="/public/images/postdateicon.jpg" alt="post date icon"/>{{format_date date_created}}</p>
+
+          <hr style="width:80%; margin-top:40px;"/>
+        </div>
+      {{/each}}
+
+    </div>
+</div>
+
+
+<script src="/public/js/dashboard.js"></script>

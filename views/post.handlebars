@@ -1,0 +1,60 @@
+<div style="margin-bottom:30px;">
+  <h2>{{title}}</h2>
+
+  <p>
+    <span style="margin-right:20px;">
+      <img class="post-icon" src="/public/images/posticon.png" alt="post icon"> {{user.name}}
+    </span>
+
+    <span style="margin-right:20px;">
+      <img class="post-icon" src="/public/images/postdateicon.jpg" alt="post date icon"> {{format_date date_created}}
+    </span>
+  </p>
+
+  <p>{{content}}</p>
+
+  {{#if userPost}}
+    <div class="d-flex">
+
+      <div class="delete-button" style="margin-right:10px;">
+        <button type="click" class="theme-button" data-id="{{id}}">/delete</button>
+      </div>
+    
+      <a href="/post/edit/{{id}}" class="secondary-button">/edit</a>
+
+    </div>
+
+  {{/if}}
+
+</div>
+
+
+  {{#if logged_in}}
+    
+    <form class="comment-form" style="padding-top:40px;">
+
+      <div class="form-group mb-3">
+        <label for="post-comment" class="form-label"><h6>comment:</h6></label>
+          <textarea class="form-input" id="post-comment" name="post-comment"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="theme-button">/submit</button>
+      </div>
+
+    </form>
+
+  {{else}}
+  
+    <a class="link" href="/login"><h6>enter to post..</h6></a>
+
+  {{/if}}
+  
+
+  {{>comments}}
+
+  {{#if logged_in}}
+    <script src="/public/js/comment.js"></script>
+  {{/if}}
+
+<script src="/public/js/delete.js"></script>
