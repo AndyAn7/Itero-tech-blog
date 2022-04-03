@@ -17,7 +17,7 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 const sess = {
-    secret: 'Super secret secret',
+    secret: 'super secret secret',
     cookie: {
     maxAge: 86400,
   },
@@ -25,8 +25,7 @@ const sess = {
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize
-  })
-};
+  })};
 
 app.use(session(sess));
 
