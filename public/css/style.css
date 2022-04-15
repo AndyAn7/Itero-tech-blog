@@ -8,8 +8,12 @@ a {
     color:#faf9f9;
 }
 
+.tabtitle {
+    border-radius: 50%;
+}
+
 .title {
-    font-style: none;
+    text-decoration: none;
 }
 
 .post-icon {
