@@ -1,15 +1,15 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    background-color: #0b090a;
     color:#faf9f9;
+}
+
+body {
+    background-color: #0b090a;
+    min-height: 100vh;
 }
 
 a {
     color:#faf9f9;
-}
-
-.tabtitle {
-    border-radius: 50%;
 }
 
 .title {
