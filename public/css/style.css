@@ -1,11 +1,11 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    color:#faf9f9;
 }
 
 body {
     background-color: #0b090a;
     min-height: 100vh;
+    color:#faf9f9;
 }
 
 a {
