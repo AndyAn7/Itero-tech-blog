@@ -7,6 +7,11 @@
 a {
     color:#faf9f9;
 }
+
+.title {
+    font-style: none;
+}
+
 .post-icon {
     width: 40px;
     height: 40px;
