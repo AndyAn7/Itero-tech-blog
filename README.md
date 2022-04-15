@@ -27,8 +27,7 @@ Itero is a tech blog where developers view, post, and comment on the latest tren
 
 ## [MockUp](#mockup)
 <a name="mockup"></a>
-<!-- ![image]()
-![image]() -->
+![image](https://github.com/AndyAn7/Itero-tech-blog/blob/main/public/images/IteroSS.png?raw=true)
 
 ## [User Story](#user)
 <a name="user"></a>
