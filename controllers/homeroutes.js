@@ -31,16 +31,15 @@ router.get('/post/:id', async (req, res) => {
             User, 
             {
                 model: Comment,
-                attributes: ['id', 'post_comment', 'date_created', 'user_id'],
+                // attributes: ['id', 'post_comment', 'date_created', 'user_id'],
                 include: [User]
             }]});
 
-            const posts = post.get({plain: true});
+            const postjson = post.get({plain: true});
             const postU = post.user_id === req.session.user_id
 
             res.render('post', {
-                ...post,
-                postU,
+                post:  postjson,
                 logged_in: req.session.logged_in
             });
     } catch (err) {

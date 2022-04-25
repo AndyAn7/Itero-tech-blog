@@ -14,7 +14,7 @@ const loginFormHandler = async (event) => {
         if (response.ok) {
             document.location.replace = ('/dashboard');
         } else {
-            alert('Something went wrong');
+            alert(response.message);
         }}};
 
 const signupFormHandler = async (event) => {
@@ -32,9 +32,10 @@ const signupFormHandler = async (event) => {
         });
 
         if (response.ok) {
-            document.location.replace = ('/dashboard');
+            document.location.replace('/dashboard');
         } else {
-            alert('Something went wrong');
+            console.log(response);
+            alert(response.message);
         }}};
 
 document

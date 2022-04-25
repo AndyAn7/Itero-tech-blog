@@ -30,18 +30,19 @@ User.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [10]
+                len: [8]
             }}},
         {
             hooks: {
                 beforeCreate: async(newUser) => {
-                    newUser.password = await bcrypt.hash(newUser.password, 10);
+                    newUser.password = await bcrypt.hash(newUser.password, 8);
                     return newUser;
                 },
                 beforeUpdate: async(updatedUser) => {
-                    updatedUser.password = await bcrypt.hash(updatedUser.password, 10);
+                    updatedUser.password = await bcrypt.hash(updatedUser.password, 8);
                     return updatedUser;
                 }},
+
             sequelize: sequelize,
             freezeTableName: true,
             underscored: true,

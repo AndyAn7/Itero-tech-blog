@@ -5,6 +5,8 @@ router.post('/', async (req, res) => {
     try {
         const user = await User.create(req.body);
 
+        // console.log(user);
+
         req.session.user_id = user.id;
         req.session.logged_in = true;
 
@@ -13,7 +15,10 @@ router.post('/', async (req, res) => {
         });
 
     } catch (err) {
-        res.status(500).json(err);
+        res.status(500).json({
+        message: 'Please enter a valid email and password of at least 8 characters.'
+        });
+        return;
     }});
 
 router.post('/login', async (req, res) => {

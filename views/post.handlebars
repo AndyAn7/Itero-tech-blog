@@ -1,13 +1,13 @@
 <div style="margin-bottom:30px;">
-  <h2>{{title}}</h2>
-
+  <h2>{{post.title}}</h2>
+{{post}}
   <p>
     <span style="margin-right:20px;">
       <img class="post-icon" src="/public/images/posticon.png" alt="post icon"> {{user.name}}
     </span>
 
     <span style="margin-right:20px;">
-      <img class="post-icon" src="/public/images/postdateicon.jpg" alt="post date icon"> {{format_date date_created}}
+      <img class="post-icon" src="/public/images/postdateicon.jpg" alt="post date icon"> {{format_date post.date_created}}
     </span>
   </p>
 
