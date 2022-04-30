@@ -18,16 +18,16 @@ Comment.init(
                 model: 'post',
                 key: 'id',
             },
+        },
         post_comment: {
             type: DataTypes.TEXT,
             allowNull: false,
-            primaryKey: true
             },
         date_created: {
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW,
             allowNull: false
-            }}},
+            }},
         {
             sequelize: sequelize,
             freezeTableName: true,

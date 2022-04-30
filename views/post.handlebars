@@ -1,13 +1,13 @@
 <div style="margin-bottom:30px;">
   <h2>{{post.title}}</h2>
-{{post}}
+  {{post.content}}
   <p>
     <span style="margin-right:20px;">
-      <img class="post-icon" src="/public/images/posticon.png" alt="post icon"> {{user.name}}
+      <img class="post-icon" src="/images/posticon.png" alt="post icon"> {{user.name}}
     </span>
 
     <span style="margin-right:20px;">
-      <img class="post-icon" src="/public/images/postdateicon.jpg" alt="post date icon"> {{format_date post.date_created}}
+      <img class="post-icon" src="/images/postdateicon.jpg" alt="post date icon"> {{format_date post.date_created}}
     </span>
   </p>
 
@@ -50,11 +50,12 @@
 
   {{/if}}
   
-
-  {{>comments}}
+  {{#each post.comments as |comment|}}
+  <p>{{comment.post_comment}}</p>
+  {{/each}}
 
   {{#if logged_in}}
-    <script src="/public/js/comment.js"></script>
+    <script src="/js/comment.js"></script>
   {{/if}}
 
-<script src="/public/js/delete.js"></script>
+<script src="/js/delete.js"></script>

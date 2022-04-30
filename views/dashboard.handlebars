@@ -7,7 +7,7 @@
 <div class="row mt-4 g-5">
   <div class="col-12 col-md-6 col-lg-6 col-sm-12">
     
-    <h6 style="background-color:#fafdf6; border-radius: 10px; color:#020202; padding: 15px 15px 15px 15px; margin-bottom:30px;">create:</h6>
+    <h6 style="background-color:#fafdf6; border-radius: 10px; color:#020202; padding: 15px 15px 15px 15px; margin-bottom:30px;">/create</h6>
     
     <form class="new-post-form">
 
@@ -44,7 +44,7 @@
             {{post.content}}
           </p>
 
-          <p><img class="post-icon" src="/public/images/postdateicon.jpg" alt="post date icon"/>{{format_date date_created}}</p>
+          <p><img class="post-icon" src="/images/postdateicon.jpg" alt="post date icon"/>{{format_date post.date_created}}</p>
 
           <hr style="width:80%; margin-top:40px;"/>
         </div>
@@ -54,4 +54,4 @@
 </div>
 
 
-<script src="/public/js/dashboard.js"></script>
+<script src="/js/dashboard.js"></script>
