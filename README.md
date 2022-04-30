@@ -24,6 +24,14 @@ Itero is a tech blog where developers view, post, and comment on the latest tren
 
 ## [Code](#code)
 <a name="code"></a>
+- bcrypt
+- connect-session-sequalize
+- dotenv
+- express
+- express-handlebars
+- express-session
+- mysql2
+- sequelize
 
 ## [MockUp](#mockup)
 <a name="mockup"></a>
