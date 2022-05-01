@@ -21,3 +21,16 @@ a {
     height: 40px;
     border-radius: 50%;
 }
+
+h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:#faf9f9;  
+}
+
+.name {
+    margin-right: 33px;
+}
+.email {
+    margin-right: 37px;
+}
